@@ -6,13 +6,11 @@ const ScheduleLecture = () => {
   const [instructors, setInstructors] = useState([]);
 
   useEffect(() => {
-  // Fetch courses
   fetch(`${process.env.REACT_APP_BACKEND_URL}/api/courses`)
     .then(response => response.json())
     .then(data => setCourses(data))
     .catch(error => console.error('Error fetching courses:', error));
 
-  // Fetch instructors
   fetch(`${process.env.REACT_APP_BACKEND_URL}/api/instructors`)
     .then(response => response.json())
     .then(data => setInstructors(data))

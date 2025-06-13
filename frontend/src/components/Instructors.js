@@ -31,10 +31,9 @@ const Instructors = () => {
       });
  if (res.ok) {
       const newInstructor = await res.json();
-      // 👇 Add newly created instructor to the list
       setInstructors((prev) => [...prev, newInstructor]);
 
-      // Reset form
+     
       setName('');
       setEmail('');
       alert('Instructor added!');
