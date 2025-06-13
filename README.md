@@ -93,6 +93,7 @@ cd schedule-lecture
 ```
 cd backend
 npm install
+```
 
 3. Frontend Setup
 ```
